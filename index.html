@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-
-  <link rel="icon" type="image/png" href="av.png">
-    <link rel="shortcut icon" href="av.png" type="image/png">
-  <meta name="description" content="Alyaa Adel – Computer Science student at BUE. View my creative software projects and resume.">
-  <meta name="author" content="Alyaa Adel">
-  <meta property="og:title" content="Alyaa Adel Portfolio" />
-  <meta property="og:description" content="Creative web & software projects by a CS student." />
-  <meta property="og:image" content="img/av.png" />
-  <meta property="og:url" content="https://alyaaadel05.github.io/alyaa-portfolio/" />
-  <meta name="twitter:card" content="summary_large_image">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alyaa Adel</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/av.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <meta name="description" content="Alyaa Adel – CS student portfolio">
 </head>
 <body>
+
+<!-- Background Video -->
+<video autoplay muted loop playsinline class="bg-video">
+  <source src="Vocean-bg.mp4" type="video/mp4" />
+</video>
 
 <!-- Navbar -->
 <header class="navbar">
   <div class="nav-logo">Alyaa</div>
-  <button class="nav-toggle" id="navToggle">☰</button>
+ 
   <ul class="nav-links" id="navLinks">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -34,106 +30,88 @@
   </ul>
 </header>
 
-
-<!-- Background Video -->
-<video autoplay muted loop playsinline class="bg-video">
-  <source src="Vocean-bg.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
-<!-- Hero Section -->
-<div id="home" class="hero">
-
+<!-- Hero -->
+<section id="home" class="hero">
   <div class="hero-content" data-aos="fade-up">
-    <p class="intro">Hello, I'm</p>
+    <p>Hello, I'm</p>
     <h1 class="name">Alyaa Adel</h1>
-    <h2 class="role">CS Student | Software & Web</h2>
-    <p class="desc">
-      Passionate about building digital experiences and<br />
-      growing through real-world tech challenges.
-    </p>
+    <h2>CS Student | Software & Web</h2>
+    <p>Passionate about building digital experiences and real-world tech challenges.</p>
     <div class="buttons">
       <a href="#projects" class="btn">View My Work</a>
       <a href="#about" class="btn">About Me</a>
-      <a href="#skills" class="btn">Skills</a>
     </div>
     <div class="avatar-section">
-      <img src="img/av.png" alt="Alyaa Avatar" class="avatar">
-      <div class="label">
-        <p class="title">Student Intern</p>
-        <p class="subtitle">Software & Web Enthusiast</p>
-      </div>
+      <img src="img/av.png" class="avatar" alt="Alyaa Avatar" />
+      <p class="title">Student Intern</p>
+      <p class="subtitle">Software & Web Enthusiast</p>
     </div>
     <div class="social">
       <p>Follow Me</p>
       <div class="social-icons">
-        <a href="https://www.instagram.com/aliaadel_25/" target="_blank"><img src="img/winsta.png" alt="Instagram"></a>
-        <a href="https://github.com/alyaaadel05" target="_blank"><img src="img/wgithub.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/alyaa-adel-baklah/" target="_blank"><img src="img/wlinkedin.png" alt="LinkedIn"></a>
+        <a href="https://instagram.com/aliaadel_25" target="_blank"><img src="img/winsta.png" alt="Instagram" /></a>
+        <a href="https://github.com/alyaaadel05" target="_blank"><img src="img/wgithub.png" alt="GitHub" /></a>
+        <a href="https://linkedin.com/in/alyaa-adel-baklah" target="_blank"><img src="img/wlinkedin.png" alt="LinkedIn" /></a>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- About -->
 <section id="about" class="about-section" data-aos="fade-up">
-  <div class="about-container">
-    <h2>About Me</h2>
-    <p>I’m Alyaa Adel, a passionate Computer Science student at the British University in Egypt. I specialize in building innovative software and web solutions that solve real-world problems.</p>
-    <p>My tech stack includes <strong>Java, C++, Python, Arduino, SQL, HTML/CSS</strong>, and <strong>Figma</strong>. I’ve completed multiple hands-on projects—from banking systems to smart garden automation.</p>
-    <p>Currently, I’m focused on full-stack development, UI/UX design, and emerging technologies like AI. I'm actively seeking internships and collaborations that challenge me to grow.</p>
-    <a href="Alyaa_Resume_Tech.pdf" class="btn" download>Download CV</a>
-  </div>
+  <h2>About Me</h2>
+  <p>I’m Alyaa Adel, a Computer Science student at BUE with a passion for real-world problem-solving through software.</p>
+  <p>My skills include <strong>Java, C++, Python, Arduino, SQL, HTML/CSS, Figma</strong> — with projects ranging from smart garden automation to banking systems.</p>
+  <p>I focus on full-stack development, UI/UX, and AI. I’m actively seeking internships and growth opportunities.</p>
+  <a href="Alyaa_Resume_Tech.pdf" class="btn" download>Download CV</a>
 </section>
 
 <!-- Projects -->
-<section id="projects" class="projects-section">
-  <h2 data-aos="fade-up">My Projects</h2>
+<section id="projects" class="projects-section" data-aos="fade-up">
+  <h2>My Projects</h2>
   <div class="project-grid">
+
     <div class="project-card" data-aos="zoom-in">
       <h3>Banking System</h3>
-      <p>Java + SQL desktop app for account login, transactions, and admin monitoring.</p>
-      <a href="mailto:alyaaadelbaklah@gmail.com?subject=Requesting%20Access%20to%20Banking%20System" class="btn download-btn">Request Access</a>
-      <p class="hint-text">Email me for full documentation and demo files.</p>
+      <p>Java + SQL desktop app for managing accounts, transactions, and admin controls.</p>
+      <a href="mailto:alyaaadelbaklah@gmail.com" class="btn">Request Access</a>
     </div>
 
     <div class="project-card" data-aos="zoom-in">
       <h3>Garden Automation</h3>
-      <p>Arduino system using soil moisture sensor, relay, and pump to automate irrigation.</p>
-      <a class="btn video-btn" onclick="openModal('gardenModal')">Watch Video</a>
-      <a href="mailto:alyaaadelbaklah@gmail.com" class="btn download-btn">Request Access</a>
+      <p>Arduino system with soil sensors and water pump for smart irrigation.</p>
+      <button class="btn" onclick="openModal('gardenModal')">Watch Video</button>
+      <a href="mailto:alyaaadelbaklah@gmail.com" class="btn">Request Access</a>
     </div>
 
     <div class="project-card" data-aos="zoom-in">
       <h3>School UI/UX</h3>
-      <p>Figma-based school dashboard for teachers and admins with messaging and schedules.</p>
-      <a href="https://www.figma.com/proto/v2aDyATj7vVa7AsqSRQDgN/Untitled" target="_blank" class="btn download-btn">View on Figma</a>
+      <p>School dashboard built in Figma with teacher tools and design accessibility.</p>
+      <a href="https://www.figma.com/proto/v2aDyATj7vVa7AsqSRQDgN/Untitled" target="_blank" class="btn">View on Figma</a>
     </div>
 
     <div class="project-card" data-aos="zoom-in">
-      <h3>Motion Sensor Light</h3>
-      <p>IR-sensor powered light switch using IC and relay logic with automatic activation.</p>
-      <a href="mailto:alyaaadelbaklah@gmail.com" class="btn download-btn">Request Access</a>
+      <h3>Motion Light Switch</h3>
+      <p>Electronics project using IR sensors and logic gates to automate lighting.</p>
+      <a href="mailto:alyaaadelbaklah@gmail.com" class="btn">Request Access</a>
     </div>
   </div>
 </section>
 
 <!-- Skills -->
 <section id="skills" class="skills-section" data-aos="fade-up">
-  <div class="skills-container">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li data-aos="flip-up">Java</li>
-      <li data-aos="flip-up">C++</li>
-      <li data-aos="flip-up">Python</li>
-      <li data-aos="flip-up">HTML / CSS</li>
-      <li data-aos="flip-up">SQL / Databases</li>
-      <li data-aos="flip-up">Arduino</li>
-      <li data-aos="flip-up">Figma</li>
-      <li data-aos="flip-up">GitHub</li>
-      <li data-aos="flip-up">Video Editing</li>
-    </ul>
-  </div>
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li>Java</li>
+    <li>C++</li>
+    <li>Python</li>
+    <li>HTML/CSS</li>
+    <li>SQL</li>
+    <li>Arduino</li>
+    <li>Figma</li>
+    <li>GitHub</li>
+    <li>Video Editing</li>
+  </ul>
 </section>
 
 <!-- Contact -->
@@ -142,7 +120,7 @@
   <form action="https://formspree.io/f/xgvygqdk" method="POST" class="contact-form">
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send Message</button>
   </form>
 </section>
@@ -157,7 +135,7 @@
   <div class="video-content" onclick="event.stopPropagation()">
     <span class="close" onclick="closeModal('gardenModal')">&times;</span>
     <video autoplay muted loop playsinline>
-      <source src="Vocean-bg.mp4" type="video/mp4" />
+      <source src="garden-demo.mp4" type="video/mp4" />
     </video>
   </div>
 </div>
@@ -165,11 +143,7 @@
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init({ duration: 1000, once: true, offset: 120 });
-
-  function toggleMenu() {
-    document.getElementById('nav-links').classList.toggle('show');
-  }
+  AOS.init({ duration: 1000, once: true });
 
   function openModal(id) {
     document.getElementById(id).style.display = "block";
@@ -184,20 +158,12 @@
   }
 
   function handleModalClick(e) {
-    const modal = document.getElementById("gardenModal");
-    const videoBox = modal.querySelector(".video-content");
-    if (!videoBox.contains(e.target)) {
-      closeModal("gardenModal");
-    }
+    if (!e.target.closest('.video-content')) closeModal('gardenModal');
   }
-</script>
-<script>
-  const toggleBtn = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
 
-  toggleBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
+  document.getElementById('navToggle').onclick = () => {
+    document.getElementById('navLinks').classList.toggle('show');
+  };
 </script>
 
 </body>
